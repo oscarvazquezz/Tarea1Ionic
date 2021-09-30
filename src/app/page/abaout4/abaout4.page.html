@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>abaout 04</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+  <ion-card><ion-button color="tertiary" expand="block" (click)="irHome()">home</ion-button></ion-card>
+
+  <ion-card *ngFor="let item of dataJson">
+    <ion-card-header>
+      <ion-card-title>{{item.nombre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content><img [src]="item.contenidos"></ion-card-content>
+  </ion-card>
+</ion-content>
+
+</ion-content>

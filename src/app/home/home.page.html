@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label><h3>Selecina a donde quiere ir</h3></ion-label>
+  <ion-card *ngFor="let item of data">
+    <ion-button color="tertiary" expand="block" (click)="guardar(item)">ir a la pagina {{item}}</ion-button>
+  </ion-card>
+</ion-content>

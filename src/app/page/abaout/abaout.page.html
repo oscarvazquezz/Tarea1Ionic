@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>abaout 01</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card><ion-button color="tertiary" expand="block" (click)="irHome()">home</ion-button></ion-card>
+
+  <ion-card *ngFor="let item of dataJson">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="item.foto">
+      </ion-avatar>
+      <ion-label>
+        <h2>User:{{item.user}}</h2>
+        <h2>Name:{{item.nombre}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  
+</ion-content>
